@@ -1,0 +1,175 @@
+<html>
+<head>
+    <title>Who Am I?</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+    <h1>HI, THIS IS MY BIODATA.</h1>
+    <div class="slider3">
+        <ul>
+            <p><li><a href="exit.html">EXIT</a></p></li>
+            <p><li><a href="experience.html">EXPERIENCE</a></p></li>
+            <p><li><a href="education.html">EDUCATION</a></p></li>
+            <p><li><a href="biodata.html">ABOUT ME</a></p></li>
+            <p><li><a href="index.html">HOME</a></p></li>
+        </ul>
+    </div>
+
+<body background= "marble.png">
+<br>
+<p align="center"><font face="geneva" size="25" background color= "black">Who Am I?</font></p>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(158, 141, 168);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #310606;
+  color: rgb(168, 127, 127);
+}
+</style>
+
+
+<p style="text-align: center;"></p>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="family.jpg" style="width:110%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="me_lgf.jpg" style="width:110%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="me_saf.jpg" style="width:110%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="kursus_mpp.jpg" style="width:110%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="mspp.jpg" style="width:110%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="uitm.jpg" style="width:110%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+
+<script>
+    let slideIndex = [1,1];
+    let slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+    
+
+<!--table-->
+<table>
+    <table class="center">
+    
+            <tr>
+                <td>Name</td>
+                <td>Nurul Ain Fitriyah Binti Mohd Azli.</td>
+            </tr>
+            <tr>
+                    <td>Date Of Birth</td>
+                    <td>20 March 2002 (21 Years Old)</td>
+            </tr>
+            <tr>
+                <td>Place Of Birth</td>
+                <td>University Malaya Medical Center (PPUM).</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>No. 26, Lrg. Mulia 1B K/S8, Tmn. Mulia Off Jln. Johan Setia, 41200 Klang, Selangor Darul Ehsan.</td>
+            </tr>
+            <tr>
+                <td>Motto</td>
+                <td>Learn Till Earn.</td>
+            </tr>
+    </tr>
+    </tr>
+    </table>
+
+<br>
+<br>
+
+<p align="center"><i> Hello.<br>
+  I am Nurul Ain Fitriyah Binti Mohd Azli.
+  I am the eldest of four siblings.
+  My father works as a supervisor in a factory in Kota Kemuning, Shah Alam.
+  Meanwhile, my mother works as a clerk at Cistrume Sheet Piling Sdn. Bhd., Kota Kemuning, Shah Alam.
+  I was born in the federal territory of Kuala Lumpur, but grew up in Klang. As early as the age of 14, 
+  I was taught to be independent by staying away from my family. I went to school in Kelantan at that time
+  because my father wanted to provide the best religious education for his children. Until today, all my 
+  siblings attend school in Kelantan except for the youngest.
+  I am grateful for everything that happened in my life because it is the source of my strength today. 
+  I love my family and myself.</p></i>
+
+<br>
+</body>
+
+<footer>
+    <h4>If you have any inquiries, do contact me here.</h4>
+    <p> 
+        <a href="tel:+60173619840"><img src="call.png" alt="button" width="3.82%" length="3.82%"></a> &nbsp &nbsp &nbsp
+        <a href= "https://wa.me/60173619840"><img src="wsp.png" alt="button" width="3.5%" length="3.5%"></a> &nbsp &nbsp &nbsp
+        <a href="https://instagram.com/_ainfitriyah._?igshid=NTA5ZTk1NTc="><img src="ig.png"alt="button" width="3.85%" length="3.85%"></a>
+    </p>
+</footer>
+</html>
